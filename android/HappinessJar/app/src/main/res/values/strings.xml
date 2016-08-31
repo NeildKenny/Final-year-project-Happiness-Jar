@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HappinessJar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_card_activty">CardActivty</string>
+    <string name="action_search">action search</string>
+    <string name="menu">not sure</string>
+    <string name="title_activity_testing_drawer">TestingDrawer</string>
+
+
+    <string name="action_example">Example action</string>
+    <string name="action_submit">Submit</string>
+
+
+
+    <string name="title_section1">Card selection</string>
+    <string name="title_section2">Create card</string>
+    <string name="title_section3">Settings</string>
+    <string name="title_section4">Logout</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_camera_test">CameraTest</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+
+    <string name="shared_preferences_settings">setting</string>
+    <string name="shared_preference_settings_camera">camera</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+</resources>

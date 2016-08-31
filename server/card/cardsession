@@ -1,0 +1,16 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="4">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="311" startPos="0" endPos="0" selMode="0" lang="PHP" encoding="-1" filename="C:\xampp\htdocs\otherbits\nyx\server\card\config\config.inc.php" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="603" startPos="0" endPos="0" selMode="0" lang="PHP" encoding="-1" filename="C:\xampp\htdocs\otherbits\nyx\server\card\Controller\CardController.php" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="854" startPos="0" endPos="0" selMode="0" lang="PHP" encoding="-1" filename="C:\xampp\htdocs\otherbits\nyx\server\card\Model\CardModel.php" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1" startPos="0" endPos="0" selMode="0" lang="PHP" encoding="-1" filename="C:\xampp\htdocs\otherbits\nyx\server\card\db\CardDAO.php" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="854" startPos="0" endPos="0" selMode="0" lang="PHP" encoding="-1" filename="C:\xampp\htdocs\otherbits\nyx\server\card\File\CardFiles.php" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1" startPos="0" endPos="0" selMode="0" lang="PHP" encoding="-1" filename="C:\xampp\htdocs\otherbits\nyx\server\card\db\DAO.php" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1" startPos="0" endPos="0" selMode="0" lang="PHP" encoding="-1" filename="C:\xampp\htdocs\otherbits\nyx\server\card\db\DAOFactory.php" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="854" startPos="0" endPos="0" selMode="0" lang="PHP" encoding="-1" filename="C:\xampp\htdocs\otherbits\nyx\server\card\db\DBManager.php" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="854" startPos="285" endPos="285" selMode="0" lang="PHP" encoding="-1" filename="C:\xampp\htdocs\otherbits\nyx\server\card\View\CardView.php" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

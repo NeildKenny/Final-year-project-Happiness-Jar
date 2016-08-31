@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ImageButton
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:id="@+id/card_edit_centerImage_imageButton"
+                android:scaleType="centerCrop"
+                android:src="@drawable/balloon"
+                />
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/card_edit_centerImage_imageButton"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/balloon"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/card_edit_leftimage_imageButton"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/balloon"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/space"
+                    android:layout_toEndOf="@+id/space" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/space" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/space2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/card_edit_rightImage_imageButton"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/balloon"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/space2"
+                    android:layout_toStartOf="@+id/space2" />
+
+            </RelativeLayout>
+        </TableLayout>
+        />
+
+    </ScrollView>
+
+</RelativeLayout>

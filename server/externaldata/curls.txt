@@ -1,0 +1,7 @@
+curl -i -X POST  -F "image[]=@myFile.jpg" -F "image[]=@a.jpg" -F "image[]=@myFile.jpg" -F "image[]=@myFile.jpg" -F "user_id = 1" -F "title= hello world" -F "description= one two three four etc" -F "tag= rawr, foo, bar" http://localhost/otherbits/nyx/server/cardIndex.php/addcardimage
+
+curl -i -X POST -F "user_id = 1" -F "title = hello world" -F "description = one two three four etc" -F "tags = rawr, foo, bar" http://localhost/otherbits/nyx/server/cardIndex.php/addcardimage
+
+curl -i -X POST -F "image[]=@myFile.jpg" -F "image[]=@a.jpg" -F "image[]=@myFile.jpg" -F "user_id= 1" -F "title= hello world" -F "description= one two three four etc" -F "tag= rawr, foo, bar" http://localhost/otherbits/nyx/server/cardIndex.php/addcardimage
+
+curl -i -X GET http://localhost/otherbits/nyx/server/cardIndex.php/getcard/48

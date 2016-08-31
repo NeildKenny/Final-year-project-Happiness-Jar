@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_theme_color">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/card_activity_fragment_load">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/load_image"
+            android:src="@drawable/jar_transparent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible"
+        android:id="@+id/card_secondary_view"
+        android:focusable="false">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView2">
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10dp">
+                <ImageButton
+                    android:background="@drawable/rounded_edittext"
+                    android:padding="5dp"
+                    android:layout_width="260dp"
+                    android:layout_height="260dp"
+                    android:id="@+id/card_activity_fragment_main_imageButton"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/jar"
+                    android:paddingTop="10dp"
+                    android:cropToPadding="false" />
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/rounded_edittext">
+
+                    <ImageButton
+                        android:background="@drawable/rounded_edittext"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:id="@+id/card_activity_fragment_center_imageButton"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/jar"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="switchImages"/>
+
+                    <ImageButton
+
+                        android:background="@drawable/rounded_edittext"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:id="@+id/card_activity_fragment_left_imageButton"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/jar"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/space"
+                        android:layout_toEndOf="@+id/space"
+                        android:onClick="switchImages"/>
+                    <ImageButton
+                        android:background="@drawable/rounded_edittext"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:id="@+id/card_activity_fragment_right_imageButton"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/jar"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/space2"
+                        android:layout_toStartOf="@+id/space2"
+                        android:onClick="switchImages"
+                        />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/space" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/space2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+
+                </RelativeLayout>
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="30dp" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="326dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:layout_width="325dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/card_activity_fragment_title_TextView"
+                        android:padding="10dp"
+                        android:layout_gravity="center_horizontal|top"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Title"/>
+
+                    <TextView
+                        android:layout_width="324dp"
+                        android:layout_height="206dp"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:id="@+id/card_activity_fragment_description_TextView"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="What happened? :)" />
+                    <TextView
+                        android:layout_width="325dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/card_activity_fragment_tag_TextView"
+                        android:padding="10dp"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="tags"/>
+
+                </FrameLayout>
+
+            </TableLayout>
+
+            />
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

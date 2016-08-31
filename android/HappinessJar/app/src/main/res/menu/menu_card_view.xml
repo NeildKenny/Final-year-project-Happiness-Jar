@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:HappinessJar="http://schemas.android.com/apk/res-auto">
+    <!-- Search, should appear as action button -->
+    <item android:id="@+id/menu_card_edit_icon"
+        android:icon="@drawable/ic_action_edit"
+        android:title="@string/action_search"
+        HappinessJar:showAsAction="always"
+        />
+
+</menu>

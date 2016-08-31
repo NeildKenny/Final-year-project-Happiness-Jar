@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_registration">
+
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/registration_dob_editText"
+        android:layout_alignLeft="@+id/registration_dob_editText"
+        android:layout_alignStart="@+id/registration_dob_editText"
+        android:id="@+id/radioGroupGender">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/radioButton_female"
+            android:layout_alignTop="@+id/card_image_imageView"
+            android:layout_toRightOf="@+id/registration_name_textView"
+            android:layout_toEndOf="@+id/registration_name_textView" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/radioButton_male"
+            android:layout_below="@+id/radioButton_female"
+            android:layout_alignLeft="@+id/radioButton_female"
+            android:layout_alignStart="@+id/radioButton_female" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name: "
+        android:id="@+id/registration_name_textView"
+        android:layout_alignBottom="@+id/registration_name_editText"
+        android:layout_alignLeft="@+id/registration_passowrd_textView"
+        android:layout_alignStart="@+id/registration_passowrd_textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/registration_name_editText"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/registration_password_editText"
+        android:layout_below="@+id/registration_name_editText"
+        android:layout_alignLeft="@+id/registration_name_editText"
+        android:layout_toRightOf="@+id/registration_name_editText"
+        android:layout_toEndOf="@+id/registration_name_editText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/registration_email_editText"
+        android:layout_below="@+id/registration_password_editText"
+        android:layout_toRightOf="@+id/registration_dob_textView"
+        android:layout_toEndOf="@+id/registration_dob_textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/registration_dob_editText"
+        android:layout_below="@+id/registration_email_editText"
+        android:layout_toRightOf="@+id/registration_dob_textView"
+        android:layout_toEndOf="@+id/registration_dob_textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Password: "
+        android:id="@+id/registration_passowrd_textView"
+        android:layout_above="@+id/registration_email_editText"
+        android:layout_alignLeft="@+id/registration_email_textView"
+        android:layout_alignStart="@+id/registration_email_textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Email:"
+        android:id="@+id/registration_email_textView"
+        android:layout_above="@+id/registration_dob_editText"
+        android:layout_alignLeft="@+id/registration_dob_textView"
+        android:layout_alignStart="@+id/registration_dob_textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date of birth: "
+        android:id="@+id/registration_dob_textView"
+        android:layout_above="@+id/radioGroupGender"
+        android:layout_toLeftOf="@+id/registration_password_editText"
+        android:layout_toStartOf="@+id/registration_password_editText" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/registration_submit_button"
+        android:onClick="registerUser"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/registration_email_textView"
+        android:layout_alignStart="@+id/registration_email_textView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/registration_cancel_button"
+        android:layout_alignTop="@+id/registration_submit_button"
+        android:layout_alignRight="@+id/registration_password_editText"
+        android:layout_alignEnd="@+id/registration_password_editText"
+        android:onClick="launchLogin"/>
+
+
+
+</RelativeLayout>
